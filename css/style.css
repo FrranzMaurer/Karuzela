@@ -38,3 +38,9 @@ html { overflow-y: scroll; }
   text-align: center;
   color: white;
 }
+
+.progress-bar {
+  height: 20px;
+  width: 0;
+  background: #333;
+}
