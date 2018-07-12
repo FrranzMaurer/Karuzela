@@ -1,0 +1,21 @@
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+  height: 50%;
+  min-height: 250px;
+}
+
+.carousel-cell {
+  width: 100%; /* full width */
+  height: 160px; /* height of carousel */
+  margin-right: 10px;
+}
+
+.carousel-cell img {
+  height: 100%;
+}
