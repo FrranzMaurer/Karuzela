@@ -1,9 +1,19 @@
+var listItems = '';
+var templateItem = document.getElementById('template-product-item').innerHTML;
+Mustache.parse(templateItem);
+
+for(var i = 0; i < productsData.length; i++){
+	console.log(productsData);
+	listItems += Mustache.render(templateItem, productsData[i]);
+}
+
+results.insertAdjacentHTML('beforeend', templateItem);
+
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( '.main-carousel', {
   // options
   cellAlign: 'center',
   contain: true,
-  pageDots: false,
   hash: true
 });
 

@@ -36,7 +36,6 @@ html { overflow-y: scroll; }
   max-width: 1200px;
   margin: auto;
   text-align: center;
-  color: white;
 }
 
 .progress-bar {
