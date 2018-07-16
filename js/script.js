@@ -1,3 +1,6 @@
+'use strict';
+(function(){
+
 var listItems = '';
 var templateItem = document.getElementById('template-product-item').innerHTML;
 Mustache.parse(templateItem);
@@ -35,4 +38,5 @@ buttonGroup.addEventListener( 'click', function( event ) {
   }
   var index = buttons.indexOf( event.target );
   flkty.select( index );
+});
 });
