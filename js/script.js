@@ -10,7 +10,9 @@ for(var i = 0; i < productsData.length; i++){
 	listItems += Mustache.render(templateItem, productsData[i]);
 }
 
-results.insertAdjacentHTML('beforeend', templateItem);
+var mainCarousel = document.getElementById('main-carousel');
+console.log(listItems, "abc");
+mainCarousel.insertAdjacentHTML('beforeend', listItems);
 
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( '.main-carousel', {
@@ -39,4 +41,4 @@ buttonGroup.addEventListener( 'click', function( event ) {
   var index = buttons.indexOf( event.target );
   flkty.select( index );
 });
-});
+})();
