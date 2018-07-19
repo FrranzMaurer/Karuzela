@@ -41,4 +41,23 @@ buttonGroup.addEventListener( 'click', function( event ) {
   var index = buttons.indexOf( event.target );
   flkty.select( index );
 });
+
+var infos = document.getElementById('infos');
+	
+	// Definiujemy funkcję initMap tak samo jak wcześniej. 
+	
+  	window.initMap = function() {
+
+		var uluru = {lat: -25.363, lng: 131.044};
+		var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 4,
+			center: coords
+		});
+		
+		var markerOne = new google.maps.Marker({
+			position: uluru,
+			map: map
+		})};
+
 })();
+

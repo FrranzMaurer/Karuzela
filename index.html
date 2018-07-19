@@ -24,11 +24,14 @@
 	</div>
 
 	<div class="progress-bar"></div>
+	<p id="infos"></p>
+    <div id="map"></div>
 
 	<script id="template-product-item" type="x-tmpl-mustache">
 		<div class="carousel-cell" style="background-image: url({{image}})">
 			<div class="container">
 				<h1> {{ title }} </h1>
+				<p id="coords">{{coords}}</p>
 				{{{description}}}
 			</div>
 		</div>
@@ -39,27 +42,32 @@
 		{
 			image: 'http://thepatternlibrary.com/img/b.jpg',
 			title: 'Lorem ipsum dolor sit amet',
-			description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+			description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
+			coords: {lat: -25.363, lng: 131.044}
 		},
 		{
 			image: 'http://thepatternlibrary.com/img/b.jpg',
 			title: 'Lorem ipsum dolor sit amet',
-			description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+			description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
+			coords: {lat: 25.363, lng: 131.044}
 		},
 		{
 			image: 'http://thepatternlibrary.com/img/b.jpg',
 			title: 'Lorem ipsum dolor sit amet',
-			description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+			description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
+			coords: {lat: -25.363, lng: -131.044}
 		},
 		{
 			image: 'http://thepatternlibrary.com/img/b.jpg',
 			title: 'Lorem ipsum dolor sit amet',
-			description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+			description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
+			coords: {lat: 25.363, lng: -131.044}
 		},
 		{
 			image: 'http://thepatternlibrary.com/img/b.jpg',
 			title: 'Lorem ipsum dolor sit amet',
-			description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+			description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
+			coords: {lat: -25.363, lng: -31.044}
 		},
 		]
 	</script>
@@ -68,4 +76,7 @@
 	<script src="vendor/hash.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
 	<script src="js/script.js"></script>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtyFQMjR7Wwr1Qdt8bnj1UWPdjBHF0p_s&callback=initMap">
+    </script>
 </body>
