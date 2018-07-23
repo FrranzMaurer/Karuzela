@@ -1,5 +1,4 @@
 /* external css: flickity.css */
-
 * { box-sizing: border-box; }
 
 body { font-family: sans-serif; }
@@ -7,45 +6,13 @@ body { font-family: sans-serif; }
 /* prevent vertical scroll bar glitch */
 html { overflow-y: scroll; }
 
-.main-carousel {
-
-}
-
-.carousel-cell {
-  width: 100%;
-  margin-right: 10px;
-  min-height: 350px;
-  height: 50%;
-  background: #8C8;
-  border-radius: 5px;
-  counter-increment: gallery-cell;
-  background-size: cover;
-}
+.carousel-cell { width: 100%; margin-right: 10px; min-height: 350px; height: 50%; background: #8C8; border-radius: 5px; counter-increment: gallery-cell; background-size: cover; }
 
 /* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 150px;
-  font-size: 80px;
-  color: white;
-}
+.carousel-cell:before { display: block; text-align: center; content: counter(gallery-cell); line-height: 200px; font-size: 80px; color: white; }
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-  text-align: center;
-  color: white;
-}
+.container { max-width: 1200px; margin: auto; text-align: center; color: white; }
 
-.progress-bar {
-  height: 20px;
-  width: 0;
-  background: #333;
-}
+.progress-bar { height: 20px; width: 0; background: #333; }
 
-#map {
-        height: 400px;  /* The height is 400 pixels */
-        width: 100%;  /* The width is the width of the web page */
-    }
+#map { height: 400px; /* The height is 400 pixels */ width: 100%; /* The width is the width of the web page */ }
